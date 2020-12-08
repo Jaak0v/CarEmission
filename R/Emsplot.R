@@ -5,7 +5,6 @@
 #' @param x double
 #' @param y double
 #' @param out double
-#' @import dplyr tidyverse ggplot2 magrittr
 #' @export
 #'
 #' @examples
