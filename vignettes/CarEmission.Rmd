@@ -1,0 +1,34 @@
+---
+title: "CarEmission"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{CarEmission}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+**Jakub Kaczmarski**
+
+**e-mail:** *[jkacz@student.agh.edu.pl](jkacz@student.agh.edu.pl)*.
+
+***
+# Wprowadzenie
+***
+Dane, na których pracujesz nasza funkcja dostpne sa na stronie [Europejska Agencja Srodowiska](https://www.eea.europa.eu/).
+
+***
+# Sposob instalacji
+***
+
+Pakiet znajduje si na portalu [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, sluzacego do pobierania i instalacji znajdujacych sie na portalu repozytoriow.
+
+```{r setup}
+library(CarEmission)
+```
