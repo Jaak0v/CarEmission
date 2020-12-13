@@ -2,10 +2,7 @@
 
 export(Emission)
 export(Emsplot)
-import(base)
 import(dplyr)
 import(ggplot2)
 import(magrittr)
-import(qpdf)
-import(stats)
 import(tidyverse)

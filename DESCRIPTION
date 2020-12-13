@@ -19,11 +19,9 @@ Suggests:
     knitr,
     rmarkdown
 Depends: 
-    base,
     dplyr,
     ggplot2,
     magrittr,
     stats,
     tidyverse,
-    qpdf
 VignetteBuilder: knitr
