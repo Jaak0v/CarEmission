@@ -51,6 +51,15 @@ W celu wygenerowania przykładowej wizualizacji graficznej w postaci wykresu nal
 Emsplot("Example")
 ```
 
+## Dostępne rodzaje wykresów
+
+```{r, eval = FALSE}
+Emsplot("box",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point2", out, Nat, Emisja, Category,  "Netezenie i emisja ze wzgledu na kategorie")
+Emsplot("bar",out, Fuel, Emisja, NULL, "Poziom emisji ze wzgledu na rodzaj paliwa")
+```
+
 ## Własna konfiguracja
 
 W celu dobrego zrozumienia działa funkcji wizualizujących wygenerowane przy pomocy funkcji Emission() danych należy zapoznać się z winietą opisującą krok po kroku działanie pakietu. W tym celu należy skorzystać z funkcji: 

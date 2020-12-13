@@ -47,6 +47,15 @@ wykresu należy skorzystać z przygotowanej funkcji pokazowej:
 Emsplot("Example")
 ```
 
+## Dostępne rodzaje wykresów
+
+``` r
+Emsplot("box",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point2", out, Nat, Emisja, Category,  "Netezenie i emisja ze wzgledu na kategorie")
+Emsplot("bar",out, Fuel, Emisja, NULL, "Poziom emisji ze wzgledu na rodzaj paliwa")
+```
+
 ## Własna konfiguracja
 
 W celu dobrego zrozumienia działa funkcji wizualizujących wygenerowane
