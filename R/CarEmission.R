@@ -1,4 +1,4 @@
-#' CarEmission: Pakiet selekcji i obliczania emisji spalin dla wybranych danych
+#' CarEmission: Pakiet selekcji i obliczania emisji spalin dla wybranych danych oraz ich wizualizacji
 #'
 #'
 #' Pakiet składa się z 2 funkcji, do selekcji i prezentacji graficznej danych dotyczcych emisji zanieczyszczeń dostepnych na stronie
@@ -12,4 +12,5 @@
 #' @import ggplot2
 #' @import magrittr
 #' @import tidyverse
+#' @impot base
 NULL

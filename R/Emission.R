@@ -5,7 +5,7 @@
 #' @param euro character
 #' @param mode character
 #' @param substancja character
-#'
+#' 
 #' @return dataframe
 #' @export
 #'

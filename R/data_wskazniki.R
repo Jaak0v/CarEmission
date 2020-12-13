@@ -1,4 +1,4 @@
-#' Wskazniki emisji z transportu drogowego EEA
+#' Wskazniki emisji z transportu drogowego EEA - dane zrodlowe
 #'
 #'@source Europejska Agencja Srodowiska (EEA) \url{https://www.eea.europa.eu/}
 #' @format Ramka danych zawiera:
@@ -24,7 +24,6 @@
 #' @examples
 #' \dontrun{
 #'  wskazniki
-#'
 #'
 #' }
 "wskazniki"

@@ -18,23 +18,22 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of CarEmission is to ...
+Pakiet „CarEmision” powstał na potrzeby projektu z przedmiotu "Metody Inwentaryzacji i Szacowania Emisji".
+Jego głównym zadaniem jest obliczanie poziomu emisji zanieczyszczeń wydzielanych przez poszczególne typy aut na podstawie danych Europejskiej Agencji Środowiska (EEA). Dodatkowym autem jest możliwość zwizualizowania wybranych danych na różnego rodzaju wykresacrjakub999h przy użyciu przygotowanych i zawartych w pakiecie funkcji. 
 
-## Installation
 
-You can install the released version of CarEmission from [CRAN](https://CRAN.R-project.org) with:
+## Proces instalacji pakietu:
 
-``` r
-install.packages("CarEmission")
+```{r setup, eval=FALSE}
+# w razie potrzeby należy zainstalować pakiet devtools
+if (!require(devtools)) {install.packages("devtools"); require(devtools)}
+
+# instalacja z GitHub
+install_git("https://github.com/Jaakov/CarEmission")
+library(CarEmission)
 ```
 
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("Jaak0v/CarEmission")
-```
-## Example
+## Przyklad zastosowania
 
 This is a basic example which shows you how to solve a common problem:
 

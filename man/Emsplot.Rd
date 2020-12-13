@@ -4,7 +4,7 @@
 \alias{Emsplot}
 \title{Stworzenie wykresu}
 \usage{
-Emsplot(out, x, y, z)
+Emsplot(type, out, x, y, z, title)
 }
 \arguments{
 \item{out}{double}

@@ -7,7 +7,13 @@
 
 <!-- badges: end -->
 
-The goal of CarEmission is to …
+Pakiet „CarEmision” powstał na potrzeby projektu z przedmiotu “Metody
+Inwentaryzacji i Szacowania Emisji”. Jego głównym zadaniem jest
+obliczanie poziomu emisji zanieczyszczeń wydzielanych przez poszczególne
+typy aut na podstawie danych Europejskiej Agencji Środowiska (EEA).
+Dodatkowym autem jest możliwość zwizualizowania wybranych danych na
+różnego rodzaju wykresacrjakub999h przy użyciu przygotowanych i
+zawartych w pakiecie funkcji.
 
 ## Installation
 
@@ -15,14 +21,12 @@ You can install the released version of CarEmission from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("CarEmission")
-```
+# w razie potrzeby należy zainstalować pakiet devtools
+if (!require(devtools)) {install.packages("devtools"); require(devtools)}
 
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("Jaak0v/CarEmission")
+# instalacja z GitHub
+install_git("https://github.com/Jaakov/CarEmission")
+library(CarEmission)
 ```
 
 ## Example
@@ -32,12 +36,12 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(CarEmission)
 #> Loading required package: tidyverse
-#> -- Attaching packages --------------------------------------------------------------------------------------------------- tidyverse 1.3.0 --
+#> -- Attaching packages ------------------------------------------------------------------------------------ tidyverse 1.3.0 --
 #> <U+221A> ggplot2 3.3.2     <U+221A> purrr   0.3.4
 #> <U+221A> tibble  3.0.4     <U+221A> dplyr   1.0.2
 #> <U+221A> tidyr   1.1.0     <U+221A> stringr 1.4.0
 #> <U+221A> readr   1.3.1     <U+221A> forcats 0.5.0
-#> -- Conflicts ------------------------------------------------------------------------------------------------------ tidyverse_conflicts() --
+#> -- Conflicts --------------------------------------------------------------------------------------- tidyverse_conflicts() --
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
 #> Loading required package: magrittr
