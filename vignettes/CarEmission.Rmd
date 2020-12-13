@@ -4,8 +4,8 @@ date:   "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{CarEmission}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 editor_options: 
   chunk_output_type: console
 ---
@@ -37,12 +37,11 @@ i Szacowania Emisji".
 Jego głównym zadaniem jest obliczanie poziomu emisji zanieczyszczeń wydzielanych przez poszczególne typy aut na podstawie danych Europejskiej Agencji Środowiska (EEA). Dodatkowym autem jest możliwość zwizualizowania wybranych danych na różnego rodzaju wykresach przy użyciu przygotowanych i zawartych w pakiecie funkcji.
 
 
-Dane, na których pracujesz nasza funkcja dostpne sa na stronie [Europejska Agencja Srodowiska](https://www.eea.europa.eu/).
-
+Dane, na których pracuje funkcja dostepne sa na stronie [Europejska Agencja Srodowiska](https://www.eea.europa.eu/).
 
 
 ***
-## Sposob instalacji pakietu CarEmission
+## 1. Sposob instalacji pakietu CarEmission
 ***
 
 Pakiet znajduje si na portalu [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, służącego do pobierania i instalacji znajdujących się na portalu repozytoriów.
@@ -62,8 +61,6 @@ library(CarEmission)
 
 W celu zapewnienia poprawnego działania pakietu koniecznej jest zainstalowanie poniżej wymienionych bibliotek: 
 ```{r, eval=FALSE}
-#install.packages("base")
-library(base)
 #install.packages("dplyr")
 library(dplyr)
 #install.packages("ggplot2")
@@ -74,4 +71,104 @@ library(magrittr)
 library(tidyverse)
 #install.packages("qpdf")
 library(qpdf)
+```
+
+***
+## 2. Dane 
+***
+Dane, na których pracuje funkcja dostepne sa na stronie [Europejska Agencja Srodowiska](https://www.eea.europa.eu/).
+Zapisane są one w ramce danych nazwanej „wskaźniki” i zawierają następujące informacje
+
+* Category (Kategoria)
+* Fuel (Rodzaj paliwa)
+* Euro Standard (Standard)
+* Techonolgy (Technologia)
+* Pollutant (Rodzaj zanieczyszczenia)
+* Mode
+
+Drugi plik nazwan "input" zawiera:
+* Natężenie ruchu wygenerowanie losowo
+* Segment, Fuel, Technology – obiekty z ramki danych „wskaźniki”
+
+
+Pakiet zawiera dwie funkcje bazowe:
+
+* CarEmission - Do obliczania emisji
+* Emsplot - do wizualizacji danych
+
+***
+## 3. Opis funkcji 
+***
+
+Funkcja `CarEmission()` pozwala na obliczenie emisji zanieczyszczeń na podstawie zaimportowanej już ramki danych "input". Znajdują się tam dane dotyczące samochodów osobowych, a więc dla nich obliczony zostanie poziom emitowanych zanieczyszczen:
+
+Funkcję uruchamiamy przy pomocy komendy: 
+```{r, eval=FALSE}
+Emission()
+```
+
+Możemy modyfikować podstawowe parametry, dla przykładu:
+
+```{r, eval=FALSE}
+#Przyklad 1
+Emission(dane = input,
+         kategoria = "Passenger Cars",
+         euro = c("Euro 4", "Euro 5"),
+         mode = "",
+         substancja = c("CO", "EC"))
+```
+
+```{r, eval=FALSE}
+#Przyklad 2
+Emission(dane = input,
+         kategoria = "Passenger Cars",
+         euro = c("Euro 4", "Euro 5", "Euro 2"),
+         mode = "Urban Peak",
+         substancja = c("CO", "EC", "CH4"))
+```
+
+Parametry możliwe do modyfikacji: 
+* Euro - Euro 4, Euro 5, Euro 6 up to 2016, Euro 6 2017-2019, Euro 6 2020+
+* Mode - Urban Peak, Highway, Rural
+* substancja - CO, EC, CH4, VOX, NOx, PM Exhaust
+
+Druga funkcja `Emsplot()` służy do wizualizacji danych na wykresach:
+Funkcję uruchamiamy przy pomocy komendy: 
+```{r, eval=FALSE}
+Emsplot()
+
+#Przyklad testowy
+Emsplot("Example")
+
+#Cialo funkcji
+#Emsplot("Rodzaj wykresu", dane, os x, os y, os z (kolor), tytul wykresu)
+```
+
+Do wyboru mamy 4 rodzaje wykresów:
+
+* Boxplot - "box"
+* Punktowy - "point"
+* Punktowy2 - "point2"
+* Slupkowy - "bar"
+
+Każdy z nich opisanych jest 4 modyfikowalnymi parametrami:
+
+* Dane na osi x
+* Dane na osi y
+* Dane na podstawie, których wykonane zostanie rozróżnienie
+* Tytul wykresu
+
+Przyklady dla kazdego rodzaju wykresu:
+
+```{r, eval=FALSE}
+Emission() #Generowanie danych
+
+#Emsplot("Rodzaj wykresu", dane, os x, os y, os z (kolor), tytul wykresu)
+Emsplot("box",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point2", out, Nat, Emisja, Category,  "Netezenie i emisja ze wzgledu na kategorie")
+Emsplot("bar",out, Fuel, Emisja, NULL, "Poziom emisji ze wzgledu na rodzaj paliwa")
+```
+
+
 ```

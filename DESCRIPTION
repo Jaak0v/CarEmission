@@ -18,11 +18,11 @@ Suggests:
     testthat,
     knitr,
     rmarkdown
-Depends: 
+Imports: 
     base,
     dplyr,
     ggplot2,
     magrittr,
-    stats,
     tidyverse,
+    qpdf
 VignetteBuilder: knitr

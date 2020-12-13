@@ -18,8 +18,6 @@ Emsplot <- function(type,data,x,y,z,title) {
   y <- enquo(y)
   z <- enquo(z)
   
-  cbp1 <- c("#999999", "#E69F00", "#56B4E9", "#009E73",
-            "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
   
   switch(type,
          "Example"={ggplot(data = out, aes(x=Segment, y=Emisja, color=Pollutant)) + 

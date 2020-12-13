@@ -7,7 +7,7 @@
 Emission(
   dane = input,
   kategoria = "Passenger Cars",
-  euro = "Euro 5",
+  euro = c("Euro 4", "Euro 5"),
   mode = "",
   substancja = c("CO", "EC")
 )
