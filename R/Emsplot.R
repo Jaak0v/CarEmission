@@ -5,6 +5,8 @@
 #' @param x double
 #' @param y double
 #' @param out double
+#' @param z doubl
+#' @param title text
 #' @export
 #'
 #' @examples

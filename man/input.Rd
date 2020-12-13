@@ -3,24 +3,26 @@
 \docType{data}
 \name{input}
 \alias{input}
-\title{Denificja parametrow}
+\title{Dane wejsciowe używane dla funkcji szacowania emisji:}
 \format{
-An object of class \code{data.frame} with 50 rows and 4 columns.
+Ramka danych zawiera:
+\describe{
+\item{Nat}{Natezenie ruchu wygenerowane losowo}
+\item{Segment}{Segment pojazdow - Mini itd.}
+\item{Fuel}{Rodzaj paliwa - Petrol itd.}
+\item{Technology}{Technologia pracy silnika - GDI itd.}
 }
-\source{
-XYZ \url{XYZ}
 }
 \usage{
 input
 }
 \description{
-Denificja parametrow
+Dane wejsciowe używane dla funkcji szacowania emisji:
 }
 \examples{
 \dontrun{
  input
-
-
+ 
 }
 }
 \keyword{datasets}

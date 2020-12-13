@@ -3,7 +3,7 @@
 \docType{data}
 \name{wskazniki}
 \alias{wskazniki}
-\title{Wskazniki emisji z transportu drogowego EEA}
+\title{Wskazniki emisji z transportu drogowego EEA - dane zrodlowe}
 \format{
 Ramka danych zawiera:
 \describe{
@@ -33,12 +33,11 @@ Europejska Agencja Srodowiska (EEA) \url{https://www.eea.europa.eu/}
 wskazniki
 }
 \description{
-Wskazniki emisji z transportu drogowego EEA
+Wskazniki emisji z transportu drogowego EEA - dane zrodlowe
 }
 \examples{
 \dontrun{
  wskazniki
-
 
 }
 }

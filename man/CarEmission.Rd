@@ -3,7 +3,7 @@
 \docType{package}
 \name{CarEmission}
 \alias{CarEmission}
-\title{CarEmission: Pakiet selekcji i obliczania emisji spalin dla wybranych danych}
+\title{CarEmission: Pakiet selekcji i obliczania emisji spalin dla wybranych danych oraz ich wizualizacji}
 \description{
 Pakiet składa się z 2 funkcji, do selekcji i prezentacji graficznej danych dotyczcych emisji zanieczyszczeń dostepnych na stronie
 Europejskiej Agencji Środowiska EEA

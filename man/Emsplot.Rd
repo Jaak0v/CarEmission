@@ -12,6 +12,10 @@ Emsplot(type, out, x, y, z, title)
 \item{x}{double}
 
 \item{y}{double}
+
+\item{z}{doubl}
+
+\item{title}{text}
 }
 \value{
 plot
