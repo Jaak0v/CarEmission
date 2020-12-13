@@ -25,7 +25,7 @@ library(CarEmission)
 
 
 **Jakub Kaczmarski**
-
+**Geoinformacja, 3 rok**
 **e-mail:** *[jkacz@student.agh.edu.pl](jkacz@student.agh.edu.pl)*.
 
 ***
