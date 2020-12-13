@@ -21,8 +21,10 @@ zawartych w pakiecie funkcji.
 # w razie potrzeby należy zainstalować pakiet devtools
 if (!require(devtools)) {install.packages("devtools"); require(devtools)}
 
-# instalacja z GitHub
-install_github("Jaak0v/CarEmission", force = T, build_vignettes = T)
+# instalacja z GitHub (bez winiety)
+install_github("Jaak0v/CarEmission")
+# instalacja z GitHub (z winietą)
+install_github("Jaak0v/CarEmission", force = T, build_vignettes= T)
 # lub w razie problemów z komenda install_github
 install_git("https://github.com/Jaakov/CarEmission")
 library(CarEmission)
@@ -30,33 +32,40 @@ library(CarEmission)
 
 ## Przyklad zastosowania
 
-This is a basic example which shows you how to solve a common problem:
+W celu wygenerowania danych i obliczenia emisji poszczególnych rodzajów
+transportu należy skorzystać z funkcji CarEmission z domyślnymi
+określonymi już w funkcji parametrami:
 
 ``` r
-
-## basic example code
+Emission()
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+W celu wygenerowania przykładowej wizualizacji graficznej w postaci
+wykresu należy skorzystać z przygotowanej funkcji pokazowej:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+Emsplot("Example")
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
+## Własna konfiguracja
 
-You can also embed plots, for example:
+W celu dobrego zrozumienia działa funkcji wizualizujących wygenerowane
+przy pomocy funkcji Emission() danych należy zapoznać się z winietą
+opisującą krok po kroku działanie pakietu. W tym celu należy skorzystać
+z funkcji:
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+``` r
+# Podgląd winiety w przeglądarce
+browseVignettes("CarEmission")
+# przejrzyj w oknie pomocy
+vignette("CarEmission")
+```
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+## Dostępne rodzaje wykresów
+
+``` r
+Emsplot("box",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+Emsplot("point2", out, Nat, Emisja, Category,  "Emisja z podzialem na segment")
+Emsplot("bar",out, Segment, Emisja, NULL, "Emisja z podzialem na segment")
+```
