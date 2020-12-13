@@ -4,10 +4,12 @@
 \alias{Emsplot}
 \title{Stworzenie wykresu}
 \usage{
-Emsplot(type, out, x, y, z, title)
+Emsplot(type, data, x, y, z, title)
 }
 \arguments{
-\item{out}{double}
+\item{type}{text}
+
+\item{data}{double}
 
 \item{x}{double}
 
