@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-Pakiet „CarEmision” powstał na potrzeby projektu z przedmiotu “Metody
+Pakiet `CarEmision` powstał na potrzeby projektu z przedmiotu “Metody
 Inwentaryzacji i Szacowania Emisji”. Jego głównym zadaniem jest
 obliczanie poziomu emisji zanieczyszczeń wydzielanych przez poszczególne
 typy aut na podstawie danych Europejskiej Agencji Środowiska (EEA).
@@ -33,7 +33,7 @@ library(CarEmission)
 ## Przyklad zastosowania
 
 W celu wygenerowania danych i obliczenia emisji poszczególnych rodzajów
-transportu należy skorzystać z funkcji CarEmission z domyślnymi
+transportu należy skorzystać z funkcji `CarEmission` z domyślnymi
 określonymi już w funkcji parametrami:
 
 ``` r
