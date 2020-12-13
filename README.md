@@ -12,8 +12,8 @@ Inwentaryzacji i Szacowania Emisji”. Jego głównym zadaniem jest
 obliczanie poziomu emisji zanieczyszczeń wydzielanych przez poszczególne
 typy aut na podstawie danych Europejskiej Agencji Środowiska (EEA).
 Dodatkowym autem jest możliwość zwizualizowania wybranych danych na
-różnego rodzaju wykresacrjakub999h przy użyciu przygotowanych i
-zawartych w pakiecie funkcji.
+różnego rodzaju wykresach przy użyciu przygotowanych i zawartych w
+pakiecie funkcji.
 
 ## Proces instalacji pakietu:
 

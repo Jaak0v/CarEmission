@@ -1,5 +1,6 @@
 ---
 title: "CarEmission"
+date:   "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{CarEmission}
@@ -10,9 +11,16 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  message = F, 
+  warning = F
 )
 ```
+
+```{r setup1, include=FALSE, results='hide'}
+library(CarEmission)
+```
+
 
 **Jakub Kaczmarski**
 
@@ -21,14 +29,47 @@ knitr::opts_chunk$set(
 ***
 # Wprowadzenie
 ***
+
+Pakiet „CarEmision” powstał na potrzeby projektu z przedmiotu "Metody Inwentaryzacji 
+i Szacowania Emisji".
+Jego głównym zadaniem jest obliczanie poziomu emisji zanieczyszczeń wydzielanych przez poszczególne typy aut na podstawie danych Europejskiej Agencji Środowiska (EEA). Dodatkowym autem jest możliwość zwizualizowania wybranych danych na różnego rodzaju wykresach przy użyciu przygotowanych i zawartych w pakiecie funkcji.
+
+
 Dane, na których pracujesz nasza funkcja dostpne sa na stronie [Europejska Agencja Srodowiska](https://www.eea.europa.eu/).
 
+
+
 ***
-# Sposob instalacji
+## Sposob instalacji pakietu CarEmission
 ***
 
-Pakiet znajduje si na portalu [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, sluzacego do pobierania i instalacji znajdujacych sie na portalu repozytoriow.
+Pakiet znajduje si na portalu [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, służącego do pobierania i instalacji znajdujących się na portalu repozytoriów.
 
-```{r setup}
+```{r setup, eval=FALSE}
+# w razie potrzeby należy zainstalować pakiet devtools
+if (!require(devtools)) {install.packages("devtools"); require(devtools)}
+
+# instalacja z GitHub (bez winiety)
+install_github("Jaak0v/CarEmission")
+# instalacja z GitHub (z winietą)
+install_github("Jaak0v/CarEmission", force = T, build_vignettes= T)
+# lub w razie problemów z komenda install_github
+install_git("https://github.com/Jaakov/CarEmission")
 library(CarEmission)
+```
+
+W celu zapewnienia poprawnego działania pakietu koniecznej jest zainstalowanie poniżej wymienionych bibliotek: 
+```{r, eval=FALSE}
+#install.packages("base")
+library(base)
+#install.packages("dplyr")
+library(dplyr)
+#install.packages("ggplot2")
+library(ggplot2)
+#install.packages("magrittr")
+library(magrittr)
+#install.packages("tidyverse")
+library(tidyverse)
+#install.packages("qpdf")
+library(qpdf)
 ```
