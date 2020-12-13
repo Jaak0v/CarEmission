@@ -54,9 +54,13 @@ Emsplot("Example")
 ## Dostępne rodzaje wykresów
 
 ```{r, eval = FALSE}
+#Boxplot
 Emsplot("box",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+#Punktowy
 Emsplot("point",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
+#Punktowy z przedzialem ufnosci
 Emsplot("point2", out, Nat, Emisja, Category,  "Netezenie i emisja ze wzgledu na kategorie")
+#Slupkowy
 Emsplot("bar",out, Fuel, Emisja, NULL, "Poziom emisji ze wzgledu na rodzaj paliwa")
 ```
 
@@ -69,13 +73,4 @@ W celu dobrego zrozumienia działa funkcji wizualizujących wygenerowane przy po
 browseVignettes("CarEmission")
 # przejrzyj w oknie pomocy
 vignette("CarEmission")
-```
-
-## Dostępne rodzaje wykresów
-
-```{r, eval = FALSE}
-Emsplot("box",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
-Emsplot("point",out, Segment, Emisja, Segment, "Emisja z podzialem na segment")
-Emsplot("point2", out, Nat, Emisja, Category,  "Netezenie i emisja ze wzgledu na kategorie")
-Emsplot("bar",out, Fuel, Emisja, NULL, "Poziom emisji ze wzgledu na rodzaj paliwa")
 ```

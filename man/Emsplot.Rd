@@ -2,29 +2,29 @@
 % Please edit documentation in R/Emsplot.R
 \name{Emsplot}
 \alias{Emsplot}
-\title{Stworzenie wykresu}
+\title{Funkcja do wizualizacji danych na podstawie danych wygenerowanych przy pomocy funkcji Emission}
 \usage{
 Emsplot(type, data, x, y, z, title)
 }
 \arguments{
-\item{type}{text}
+\item{type}{text - Typ wykresu}
 
-\item{data}{double}
+\item{data}{double - dane}
 
-\item{x}{double}
+\item{x}{double - dane na osi x}
 
-\item{y}{double}
+\item{y}{double - dane na osi y}
 
-\item{z}{doubl}
+\item{z}{double}
 
-\item{title}{text}
+\item{title}{text - Tytul}
 }
 \value{
 plot
 }
 \description{
-Stworzenie wykresu
+Funkcja do wizualizacji danych na podstawie danych wygenerowanych przy pomocy funkcji Emission
 }
 \examples{
-examples \donttest{Emsplot("Example")}
+\donttest{Emsplot("Example")}
 }

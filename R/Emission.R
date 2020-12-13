@@ -1,4 +1,7 @@
-#' Funkcja do obliczenia emisji spalin
+#' Funkcja emisje spalin na podstawie danych zawartych w ramkach danych "wskazniki" i "input"
+#'
+#' Algorytm obliczen emisji:
+#' Emisja = Nat x ((Alpha  x Procent^2 + Beta x Procent + Gamma + (Delta/Procent)) / (Epsilon x Procent^2 + Zita x Procent + Hta) x (1- Reduction))
 #'
 #' @param dane dataf
 #' @param dane dataframe

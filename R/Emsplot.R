@@ -1,16 +1,16 @@
-#' Stworzenie wykresu
+#' Funkcja do wizualizacji danych na podstawie danych wygenerowanych przy pomocy funkcji Emission
 #'
 #'
 #' @return plot
-#' @param x double
-#' @param y double
-#' @param data double
-#' @param z doubl
-#' @param title text
-#' @param type text
+#' @param x double - dane na osi x
+#' @param y double - dane na osi y
+#' @param data double - dane
+#' @param z double
+#' @param title text - Tytul
+#' @param type text - Typ wykresu 
 #' @export
 #'
-#' @examples examples \donttest{Emsplot("Example")}
+#' @examples \donttest{Emsplot("Example")}
 
 Emsplot <- function(type,data,x,y,z,title) {
   

@@ -2,7 +2,7 @@
 % Please edit documentation in R/Emission.R
 \name{Emission}
 \alias{Emission}
-\title{Funkcja do obliczenia emisji spalin}
+\title{Funkcja emisje spalin na podstawie danych zawartych w ramkach danych "wskazniki" i "input"}
 \usage{
 Emission(
   dane = input,
@@ -27,7 +27,8 @@ Emission(
 dataframe
 }
 \description{
-Funkcja do obliczenia emisji spalin
+Algorytm obliczen emisji:
+Emisja = Nat x ((Alpha  x Procent^2 + Beta x Procent + Gamma + (Delta/Procent)) / (Epsilon x Procent^2 + Zita x Procent + Hta) x (1- Reduction))
 }
 \examples{
 \donttest{Emission()}
