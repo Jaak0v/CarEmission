@@ -22,6 +22,8 @@ zawartych w pakiecie funkcji.
 if (!require(devtools)) {install.packages("devtools"); require(devtools)}
 
 # instalacja z GitHub
+install_github("Jaak0v/CarEmission", force = T, build_vignettes = T)
+# lub w razie problemów z komenda install_github
 install_git("https://github.com/Jaakov/CarEmission")
 library(CarEmission)
 ```
