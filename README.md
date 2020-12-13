@@ -15,10 +15,7 @@ Dodatkowym autem jest możliwość zwizualizowania wybranych danych na
 różnego rodzaju wykresacrjakub999h przy użyciu przygotowanych i
 zawartych w pakiecie funkcji.
 
-## Installation
-
-You can install the released version of CarEmission from
-[CRAN](https://CRAN.R-project.org) with:
+## Proces instalacji pakietu:
 
 ``` r
 # w razie potrzeby należy zainstalować pakiet devtools
@@ -29,30 +26,12 @@ install_git("https://github.com/Jaakov/CarEmission")
 library(CarEmission)
 ```
 
-## Example
+## Przyklad zastosowania
 
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(CarEmission)
-#> Loading required package: tidyverse
-#> -- Attaching packages ------------------------------------------------------------------------------------ tidyverse 1.3.0 --
-#> <U+221A> ggplot2 3.3.2     <U+221A> purrr   0.3.4
-#> <U+221A> tibble  3.0.4     <U+221A> dplyr   1.0.2
-#> <U+221A> tidyr   1.1.0     <U+221A> stringr 1.4.0
-#> <U+221A> readr   1.3.1     <U+221A> forcats 0.5.0
-#> -- Conflicts --------------------------------------------------------------------------------------- tidyverse_conflicts() --
-#> x dplyr::filter() masks stats::filter()
-#> x dplyr::lag()    masks stats::lag()
-#> Loading required package: magrittr
-#> 
-#> Attaching package: 'magrittr'
-#> The following object is masked from 'package:purrr':
-#> 
-#>     set_names
-#> The following object is masked from 'package:tidyr':
-#> 
-#>     extract
+
 ## basic example code
 ```
 
