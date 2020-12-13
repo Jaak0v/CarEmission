@@ -19,6 +19,7 @@ Suggests:
     knitr,
     rmarkdown
 Depends: 
+    base,
     dplyr,
     ggplot2,
     magrittr,

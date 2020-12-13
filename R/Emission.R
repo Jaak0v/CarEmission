@@ -1,5 +1,6 @@
-#' Obliczenia emisji spalin
+#' Funkcja do obliczenia emisji spalin
 #'
+#' @param dane dataf
 #' @param dane dataframe
 #' @param kategoria character
 #' @param euro character

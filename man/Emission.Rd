@@ -2,7 +2,7 @@
 % Please edit documentation in R/Emission.R
 \name{Emission}
 \alias{Emission}
-\title{Obliczenia emisji spalin}
+\title{Funkcja do obliczenia emisji spalin}
 \usage{
 Emission(
   dane = input,
@@ -27,7 +27,7 @@ Emission(
 dataframe
 }
 \description{
-Obliczenia emisji spalin
+Funkcja do obliczenia emisji spalin
 }
 \examples{
 \donttest{Emission()}
