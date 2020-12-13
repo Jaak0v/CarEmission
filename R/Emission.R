@@ -9,7 +9,8 @@
 #' @return dataframe
 #' @export
 #'
-#' @examples
+#' @examples \donttest{Emission()}
+
 Emission <- function(dane = input,
                      kategoria = "Passenger Cars",
                      #paliwo = "Petrol",
@@ -19,10 +20,10 @@ Emission <- function(dane = input,
                      mode = "",
                      substancja = c("CO", "EC")) {
   out <- wskazniki %>%
-    filter(Category %in% kategoria) %>%
-    filter(Euro.Standard %in% euro) %>%
-    filter(Pollutant %in% substancja) %>%
-    filter(Mode %in% mode)
+    dplyr::filter(Category %in% kategoria) %>%
+    dplyr::filter(Euro.Standard %in% euro) %>%
+    dplyr::filter(Pollutant %in% substancja) %>%
+    dplyr::filter(Mode %in% mode)
   #filter(Fuel %in% paliwo)
   #filter(Segment %in% segment)
   

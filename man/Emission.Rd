@@ -29,3 +29,6 @@ dataframe
 \description{
 Obliczenia emisji spalin
 }
+\examples{
+\donttest{Emission()}
+}

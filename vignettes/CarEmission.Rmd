@@ -45,7 +45,7 @@ Dane, na których pracujesz nasza funkcja dostpne sa na stronie [Europejska Agen
 
 Pakiet znajduje si na portalu [github](https://github.com/), przez co konieczne jest zainstalowanie pakietu `devtools`, służącego do pobierania i instalacji znajdujących się na portalu repozytoriów.
 
-```{r setup, eval=FALSE}
+```{r setup2, eval=FALSE}
 # w razie potrzeby należy zainstalować pakiet devtools
 if (!require(devtools)) {install.packages("devtools"); require(devtools)}
 

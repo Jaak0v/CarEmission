@@ -25,3 +25,6 @@ plot
 \description{
 Stworzenie wykresu
 }
+\examples{
+examples \donttest{Emsplot("Example")}
+}

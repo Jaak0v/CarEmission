@@ -10,7 +10,7 @@
 #' @param type text
 #' @export
 #'
-#' @examples
+#' @examples examples \donttest{Emsplot("Example")}
 
 Emsplot <- function(type,data,x,y,z,title) {
   
