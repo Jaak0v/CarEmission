@@ -19,10 +19,9 @@ Suggests:
     knitr,
     rmarkdown
 Depends: 
-    tidyverse,
     dplyr,
-    base,
-    stats,
     ggplot2,
     magrittr,
+    tidyverse,
+    stats,
 VignetteBuilder: knitr

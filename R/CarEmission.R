@@ -8,10 +8,9 @@
 #'
 #' @docType package
 #' @name CarEmission
-#' @import base
 #' @import dplyr 
 #' @import ggplot2
 #' @import magrittr
 #' @import tidyverse
-#' @import qpdf
+#' @import stats
 NULL
